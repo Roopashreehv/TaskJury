@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- bootstrp CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <!-- custom CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <title>SinglePage</title>
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+    <section id="header">
+        <a href="#"><img src="./images/logo.png" class="logo" alt=""><br><span class="navbar-text">Skin and Hair
+                Expert</span></a>
+        <div>
+            <ul id="navbar">
+                <li><a class="active" href="index.html">About Us</a></li>
+                <li><a href="#">Our Expertise</a></li>
+                <li><a href="#">Testimonials</a></li>
+                <li><a href="#">Skin and Hair</a></li>
+                <li><a href="#">Shop</a></li>
+                <li><a href="#"> <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
+                            class="bi bi-basket" viewBox="0 0 16 16">
+                            <path
+                                d="M5.757 1.071a.5.5 0 0 1 .172.686L3.383 6h9.234L10.07 1.757a.5.5 0 1 1 .858-.514L13.783 6H15a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1v4.5a2.5 2.5 0 0 1-2.5 2.5h-9A2.5 2.5 0 0 1 1 13.5V9a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h1.217L5.07 1.243a.5.5 0 0 1 .686-.172zM2 9v4.5A1.5 1.5 0 0 0 3.5 15h9a1.5 1.5 0 0 0 1.5-1.5V9H2zM1 7v1h14V7H1zm3 3a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0v-3A.5.5 0 0 1 4 10zm2 0a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0v-3A.5.5 0 0 1 6 10zm2 0a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0v-3A.5.5 0 0 1 8 10zm2 0a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0v-3a.5.5 0 0 1 .5-.5zm2 0a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0v-3a.5.5 0 0 1 .5-.5z" />
+                        </svg></a></li>
+                <li><a href="#"> <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
+                            class="bi bi-bell" viewBox="0 0 16 16">
+                            <path
+                                d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2zM8 1.918l-.797.161A4.002 4.002 0 0 0 4 6c0 .628-.134 2.197-.459 3.742-.16.767-.376 1.566-.663 2.258h10.244c-.287-.692-.502-1.49-.663-2.258C12.134 8.197 12 6.628 12 6a4.002 4.002 0 0 0-3.203-3.92L8 1.917zM14.22 12c.223.447.481.801.78 1H1c.299-.199.557-.553.78-1C2.68 10.2 3 6.88 3 6c0-2.42 1.72-4.44 4.005-4.901a1 1 0 1 1 1.99 0A5.002 5.002 0 0 1 13 6c0 .88.32 4.2 1.22 6z" />
+                        </svg></a></li>
+                <li><a href="#" class="sign">SignUp</a></li>
+                <li><a href="#" class="sign">Contact Us</a></li>
+                <a href="#" id="close"><i class="far fa-times"><svg xmlns="http://www.w3.org/2000/svg" width="20"
+                            height="20" fill="currentColor" class="bi bi-x-lg" viewBox="0 0 16 16">
+                            <path
+                                d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z" />
+                        </svg></i></a>
+            </ul>
+        </div>
+        <div id="mobile">
+            <i class="fas fa-outdent">
+                <svg id="bar" xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor"
+                    class="bi bi-list" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                        d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+                </svg>
+            </i>
+        </div>
+    </section>
+    <!-- End Navigation -->
+
+    <!-- header start -->
+    <section id="hero">
+        <h1>"Revolutionise <br>Your Skin and Hair <br>Care with <br> SkinOCare."</h1>
+        <h5>"Access a Well rounded Skin Care Routine,expertly designed through the fusion of dermatologist <br>
+            knowledge and AI Technology."</h5>
+        <button>Download Now</button>
+    </section>
+    <!-- header end -->
+
+    <!-- AI section start -->
+    <section id="ai">
+        <h1>"Making use of AI for in-depth skin <br> and hair analysis."</h1>
+        <h5>"our app's cutting-edge AI technology thoroughly assesses your skin and <br> hair, detecting over 20
+            distinct
+            conditions by leveraging insights from a <br> vast database over 25 million prior cases integrated into its
+            advanced <br> deep learning framework."</h5>
+
+        <div class="men">
+            <img src="./images/men1.jpg" alt=""><span>deep learning based image recognition</span>
+            <img src="./images/men2.jpg" alt=""><span>instant skin & hair analysis in milliseconds</span>
+            <img src="./images/wmn1.jpg" alt=""><span>High Accuracy in detecting skin and hair issues</span>
+        </div>
+
+    </section>
+    <!-- AI section start -->
+
+    <!-- Choose start -->
+    <section id="doc">
+        <h2>"Why Choose Us"</h2>
+        <p>Choose us for personalized care and Transformational Result</p>
+
+        <div class="text-container">
+            <div class="comp">
+                <h3>Comprehensive Care</h3>
+                <p>"We consider factors like product suitability, mental well being,nutrition, and
+                    environmentalconditions
+                    to ensure a Comprehensive approach to your skin hair health."</p>
+            </div>
+
+            <div class="pers">
+                <h3>Personalized Experise</h3>
+                <p>"Access a personal dermatologist who customizes your care for optimal results."</p>
+            </div>
+
+            <div class="cust">
+                <h3>Customized Regimen</h3>
+                <p>"We craft a tailored regimen to meet your unique skin and hair goals and concerns."</p>
+            </div>
+            <div class="cont">
+                <h3>Continuous Monitoring</h3>
+                <p>"Our personal tracking system monitors your progress, ensuring you make positive strides toward your
+                    skin and hair health goals."</p>
+            </div>
+            <div class="data">
+                <h3>Data-Driven Insights</h3>
+                <p>"We use AI and a vast database of previous cases for accurate and effective insights."</p>
+            </div>
+            <div class="simp">
+                <h3>Simplified Care</h3>
+                <p>"We simply skin and hair care with a dedicated dermatologist, tailored regimen,and tracking system
+                    for an easy, hassle-free journey to healthier skin and hair."</p>
+            </div>
+        </div>
+    </section>
+    <!-- Choose end -->
+
+    <!-- Ensure start -->
+    <section id="ensure">
+        <div class="en-text">
+            <h2>"Ensuring Specialised Care from our Experts."</h2>
+            <p>After AI's supportive role, our team of over experienced dermotologist designs a personalised regimen.
+                These dermatologists are skilled in addressing mild to severe issues and offer effective care solutions
+                for maintaining optimal skin and hair health. Currently, they provide ongoing monthly care to more than
+                one million customers through our app.</p>
+        </div>
+
+        <div class="pro-container">
+            <div class="pro">
+                <img src="./images/doc2.jpg" alt="">
+            </div>
+
+            <div class="pro">
+                <img src="./images/doc3.jpg" alt="">
+            </div>
+
+            <div class="pro">
+                <img src="./images/doc.jpg" alt="">
+            </div>
+
+            <div class="pro">
+                <img src="./images/doc2.jpg" alt="">
+            </div>
+
+            <div class="pro">
+                <img src="./images/doc3.jpg" alt="">
+            </div>
+
+            <div class="pro">
+                <img src="./images/doc.jpg" alt="">
+            </div>
+
+            <div class="pro">
+                <img src="./images/doc2.jpg" alt="">
+            </div>
+
+            <div class="pro">
+                <img src="./images/doc3.jpg" alt="">
+            </div>
+        </div>
+
+    </section>
+    <!-- Ensure ends -->
+
+    <!-- service start -->
+    <section id="service">
+        <h1>Our Services</h1>
+        <p>Unlock your beauty Potential with our Comprehensive Services</p>
+
+        <div class="pro-container">
+            <div class="pro">
+                <div class="pic1">
+                    <img src="./images/product2.jpg">
+                    <h5>Skin & Hair Regimen</h5>
+                    <p>"Guranteed visible improvements through the use of clinically tested ingredients and individual
+                        product solutions."</p>
+                </div>
+            </div>
+
+            <div class="pro">
+                <div class="pic2">
+                    <img src="./images/diet.jpg" alt="">
+                    <h5>Nutritional Diet Plan</h5>
+                    <p>"Free meal plans to ensure your dail dietry choices promote the health of your skin and hair."
+                    </p>
+                </div>
+            </div>
+
+            <div class="pro">
+                <div class="pic3">
+                    <img src="./images/lifestyle.jpg">
+                    <h5>lifestyle Guidelines By Experts</h5>
+                    <p>"Guidance for a wholesome, clean, and stress free lifestyle to help you radiate natural beauty."
+                    </p>
+                </div>
+            </div>
+
+            <div class="pro">
+                <div class="pic4">
+                    <img src="./images/docP.jpg">
+                    <h5>Regular Doctor Checkups</h5>
+                    <p>"Receive complimentary periodic assessments with a skincare dermatologist to meticulously track
+                        your
+                        skin and hair improvements."</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- service end -->
+
+    <!-- join -->
+    <section id="join">
+        <h1>"Join the SkinoCare experience and revitalise your skin and hair to their optimal health."</h1>
+        <p>"Join the SkinCare experience, where science and beauty coverage, and embark on a transformation journey to
+            revitalize your skin and hair, restoring them to the peak of health and radiance through personalized care
+            and guidance."</p>
+        <button>Download Now</button>
+        <div class="acne">
+            <img src="./images/acne2.jpg" alt="">
+        </div>
+
+    </section>
+    <!-- end -->
+
+    <!-- testimonials -->
+    <section id="test">
+        <h1>"Testimonials"</h1>
+        <p>"Journey Through the Inspiring stories of Our Valued Customers: Discovers How SkinoCare Transformed Their
+            Skin and Hair Health, Boosting Confidence and Well-Being
+        </p>
+        <h4>10K+ clients loved SkinoCare</h4>
+        <div class="client">
+            <img src="./images/doc.jpg" alt="">
+            <img src="./images/men1.jpg" alt="">
+            <img src="./images/men2.jpg" alt="">
+            <img src="./images/men3.jpg" alt="">
+            <img src="./images/wmn1.jpg" alt="">
+            <img src="./images/women2.jpg" alt="">
+            <img src="./images/women3.jpg2" alt="">
+        </div>
+
+        <div class="text-container">
+            <div class="oliv">
+                <h4>SkinoCare has been a game changer for me. I struggled with skin issues for years, but their
+                    personalized regimen and expert guidance have transformedd my complexion. I feel more confident than
+                    ever!</h4>
+                <div class="wmn">
+                    <img src="./images/women3.jpg" alt="">
+                    <h3>Olivia Rhye</h3>
+                </div>
+            </div>
+            <div class="oliv">
+                <h4>SkinoCare has been a game changer for me. I struggled with skin issues for years, but their
+                    personalized regimen and expert guidance have transformedd my complexion. I feel more confident than
+                    ever!</h4>
+                <div class="wmn">
+                    <img src="./images/women3.jpg" alt="">
+                    <h3>Olivia Rhye</hr>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end -->
+
+    <!-- product  -->
+    <section id="prod">
+        <div class="prod-container">
+            <h1>"Not currently in need of dermotological assistance?"</h1>
+            <p>"But still desire access to products that are entirely safe and approved by dermotologist...</p>
+            <button>Shop Now</button>
+        </div>
+        <div class="imgs">
+            <img src="./images/product2.jpg" alt="">
+
+            <img src="./images/product3.jpg" alt="">
+
+            <img src="./images/product1.avif" alt="">
+
+            <img src="./images/product3.jpg" alt="">
+        </div>
+
+    </section>
+    <!-- end -->
+
+    <!-- footer -->
+    <footer class="foot">
+        <div>
+            <img src="./images/logo.png" alt="">
+            <h4>skinOcare</h4>
+        </div>
+
+        <div class="col">
+            <h5>Pages</h5>
+            <a href="#">About Us</a>
+            <a href="#">Our Expertise</a>
+            <a href="#">Testimonials</a>
+            <a href="#">Skin & Hair</a>
+            <a href="#">Shop</a>
+        </div>
+
+        <div class="col">
+            <h5>Legal and Help</h5>
+            <a href="#">FAQs</a>
+            <a href="#">Terms of use</a>
+            <a href="#">Privacy Policy</a>
+        </div>
+
+        <div class="col">
+            <h5>Contact Us</h5>
+            <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                    class="bi bi-geo-alt" viewBox="0 0 16 16">
+                    <path
+                        d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z" />
+                    <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
+                </svg>Address</a>
+            <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                    class="bi bi-telephone" viewBox="0 0 16 16">
+                    <path
+                        d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z" />
+                </svg>Phone Numbers</a>
+            <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                    class="bi bi-envelope" viewBox="0 0 16 16">
+                    <path
+                        d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z" />
+                </svg>mail id</a>
+        </div>
+
+        <div class="col">
+            <h5>Social Links</h5>
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
+                    class="bi bi-facebook" viewBox="0 0 16 16">
+                    <path
+                        d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" />
+                </svg>
+
+                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-twitter"
+                    viewBox="0 0 16 16">
+                    <path
+                        d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z" />
+                </svg>
+
+                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
+                    class="bi bi-linkedin" viewBox="0 0 16 16">
+                    <path
+                        d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z" />
+                </svg>
+
+                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-youtube"
+                    viewBox="0 0 16 16">
+                    <path
+                        d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.007 2.007 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.007 2.007 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31.4 31.4 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.007 2.007 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A99.788 99.788 0 0 1 7.858 2h.193zM6.4 5.209v4.818l4.157-2.408L6.4 5.209z" />
+                </svg>
+            </div>
+            <div>
+                <img src="./images/play copy.jpg" alt="">
+            </div>
+            <div>
+                <img src="./images/app.jpg" alt="">
+            </div>
+        </div>
+    </footer>
+    <!-- end -->
+
+
+    <!-- Jquery bootstrap -->
+    <script src="script.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
